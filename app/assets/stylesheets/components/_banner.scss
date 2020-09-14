@@ -3,6 +3,7 @@
   box-sizing: border-box;
   color: $light-gray;
   overflow: hidden;
+  margin: 10px;
 }
 
 #index {
@@ -22,7 +23,7 @@
 
 .matrix {
   height: 0;
-  max-height: 100%;
+  max-height: calc(100%);
   position: relative;
   top: 0;
   padding: 0 5px;
