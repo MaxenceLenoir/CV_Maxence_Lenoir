@@ -1,0 +1,22 @@
+.container {
+  color: $light-gray;
+}
+
+.container-levels {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+}
+
+.wrapper {
+  opacity: 0.99;
+}

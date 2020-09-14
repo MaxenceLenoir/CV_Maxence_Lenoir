@@ -24,11 +24,15 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { matrixShow } from "../plugins/matrix";
+import { Splitting } from "../plugins/splitting";
+// import { bannerEffect } from "../plugins/banner";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+  Splitting();
+  matrixShow();
+  // bannerEffect();
 });
