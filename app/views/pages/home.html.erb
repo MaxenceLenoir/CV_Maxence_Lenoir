@@ -8,9 +8,10 @@
 </div>
 
 <div class="container">
-  <h3>About me</h3>
+  <h3 class="text-center">A propos de moi</h3>
+  <p>Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le but de m'épanouir davantage dans mon travail. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation de <strong>développeur Web</strong> proposé par Le Wagon entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou de d'autres formations sur divers langages de programation.</p>
   <%= image_tag "profil.jpg", class: "avatar-big" %>
-  <h3>Skills</h3>
+  <h3 class="text-center">Skills</h3>
   <div class="container-levels">
     <% @levels.each do |level| %>
       <div class="wrapper">
@@ -36,7 +37,7 @@
       </div>
     <% end %>
   </div>
-  <h3>My Projects</h3>
+  <h3 class="text-center">My Projects</h3>
   <footer>
    <ul class="social-icons">
       <li>
