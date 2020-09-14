@@ -3,12 +3,7 @@ function matrixShow(){
   if (banner) {
     const matrix = document.getElementsByClassName("matrix");
     console.log(matrix);
-
-    const nums = "0123456789"
-    const letters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ"
-    const rus = "БГДЖЗИКЛПРТУФХЦЧЩЫЭЮ"
-    const jap = "あかさたなはまやらわがざだばぱザダバパ"
-    const arrayNumLetter = [nums, letters, rus, jap];
+    const arrayNumLetter = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a','A','b','B','c','C','d','D','e','E','f','F','g','G','h','H','i','I','j','J','k','K','l','L','m','M','n','N','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z','Б','Г','Д','Ж','З','И','К','Л','П','Р','Т','У','Ф','Х','Ц','Ч','Щ','Ы','Э','Ю','あ','か','さ','た','な','は','ま','や','ら','わ','が','ざ','だ','ば','ぱ','ザ','ダ','バ','パ'];
     const s_string = arrayNumLetter.join('');
 
     const randomized = () => Math.floor(Math.random() * s_string.length);
@@ -33,7 +28,7 @@ function matrixShow(){
     for (let i = 0; i < s_string.length; i++) {
       index.innerHTML += matrixbar;
       matrix[i].style.opacity = (Math.random() + .3) * 1;
-      matrix[i].style.animationDelay = Math.random() * (matrix.length / 2) + 's';
+      matrix[i].style.animationDelay = Math.random() * (matrix.length / 4) + 's';
       matrix[i].style.transform = `translateZ(${Math.floor(Math.random() * window.innerWidth) + "px"})`;
       matrix[i].innerHTML = shuffleStrings();
     }
@@ -42,13 +37,20 @@ function matrixShow(){
       index.className = "loaded";
     }
 
-    setTimeout(init, 2000);
+    function desinit(){
+      clearInterval(myInterval);
+      index.remove();
+    }
 
-    setInterval(function () {
+    setTimeout(init, 1000);
+
+    setTimeout(desinit, 6000);
+
+    const myInterval = setInterval(function () {
       for(let i = 0; i < s_string.length; i++) {
         matrix[randomized()].innerHTML = sliced() + shuffleStrings();
       }
-    }, 300);
+    }, 100);
   }
 }
 

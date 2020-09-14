@@ -6,11 +6,25 @@
   margin: 10px;
 }
 
+.typed-cursor {
+  font-size: 72px;
+  color: $green-skill;
+  opacity: 0.8;
+}
+
+.banner-title {
+  color: $green-skill;
+  font-size: 72px;
+  opacity: 0.8;
+  text-shadow: 0 1px 2px $green-skill;
+}
+
 #index {
   height: 100%;
   background: $black-cv;
   perspective: 100000px;
   display: flex;
+  overflow: hidden;
 }
 
 #index .loaded .matrix {
@@ -18,7 +32,8 @@
 }
 
 #index.loaded {
-  animation: perspective 20s 5s alternate infinite;
+  animation: perspective 10s;
+  animation-fill-mode: forwards;
 }
 
 .matrix {
@@ -30,7 +45,7 @@
   color: $green-skill;
   text-shadow: 0 1px 2px $green-skill;
   letter-spacing: 2px;
-  animation: growing 5s;
+  animation: growing 2.5s;
   animation-fill-mode: forwards;
   border-radius: 0 5px 5px 0;
   flex: 1 0 auto;

@@ -25,14 +25,16 @@ require("channels")
 // External imports
 import "bootstrap";
 import { matrixShow } from "../plugins/matrix";
-import { Splitting } from "../plugins/splitting";
+// import { Splitting } from "../plugins/splitting";
+import { loadDynamicBannerText } from "../plugins/typed"
 // import { bannerEffect } from "../plugins/banner";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  Splitting();
+  // Splitting();
   matrixShow();
+  setTimeout(loadDynamicBannerText, 6100);
   // bannerEffect();
 });

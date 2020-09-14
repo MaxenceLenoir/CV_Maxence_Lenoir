@@ -40,10 +40,10 @@
   right: 4px;
   bottom: 4px;
   height: 30px;
-  background: rgba(0,0,0,0.4);
   text-align: center;
   opacity: 0;
   transition: 0.5s;
+  color: $light-gray;
 }
 
 .card-skill:hover .card-skill-content {
@@ -61,6 +61,7 @@
   justify-content: center;
   margin: 20px;
   background: #060b1f;
+  color: $light-gray;
 }
 
 // level color css
@@ -74,7 +75,7 @@
   bottom: -2px;
   background: #fff;
   z-index: -1;
-  background: linear-gradient(235deg,$blue-sky-skill,$black-cv,$orange-skill);
+  background: linear-gradient(235deg,$yellow-skill,$black-cv,$yellow-skill);
 }
 
 .beginner::after{
@@ -87,7 +88,7 @@
   background: #fff;
   z-index: -2;
   filter: blur(40px);
-  background: linear-gradient(235deg,$blue-sky-skill,$black-cv,$orange-skill);
+  background: linear-gradient(235deg,$yellow-skill,$black-cv,$yellow-skill);
 }
 
 .intermediate::before {
@@ -99,7 +100,7 @@
   bottom: -2px;
   background: #fff;
   z-index: -1;
-  background: linear-gradient(235deg,$pink-skill,$black-cv,$yellow-skill);
+  background: linear-gradient(235deg,$orange-skill,$black-cv,$orange-skill);
 }
 
 .intermediate::after{
@@ -112,7 +113,7 @@
   background: #fff;
   z-index: -2;
   filter: blur(40px);
-  background: linear-gradient(235deg,$pink-skill,$black-cv,$yellow-skill);
+  background: linear-gradient(235deg,$orange-skill,$black-cv,$orange-skill);
 }
 
 .advanced::before {
@@ -124,7 +125,7 @@
   bottom: -2px;
   background: #fff;
   z-index: -1;
-  background: linear-gradient(235deg,$red-skill,$black-cv,$green-skill);
+  background: linear-gradient(235deg,$red-skill,$black-cv,$red-skill);
 }
 
 .advanced::after{
@@ -137,5 +138,5 @@
   background: #fff;
   z-index: -2;
   filter: blur(40px);
-  background: linear-gradient(235deg,$red-skill,$black-cv,$green-skill);
+  background: linear-gradient(235deg,$red-skill,$black-cv,$red-skill);
 }

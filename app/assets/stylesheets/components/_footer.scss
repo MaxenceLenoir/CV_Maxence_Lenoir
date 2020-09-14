@@ -32,7 +32,7 @@
   height: 45px;
   border-radius: 100%;
   display: block;
-  background: linear-gradient(45deg, $red-skill, $pink-skill);
+  background: linear-gradient(45deg, $blue-sky-skill, $green-skill);
   transition: all 265ms ease-out;
 }
 
@@ -45,8 +45,8 @@
   transform: scale(2.2);
   -ms-transform: scale(2.2);
   -webkit-transform: scale(2.2);
-  color: $red-skill;
-  background: -webkit-linear-gradient(45deg, $red-skill, $pink-skill);
+  color: $blue-sky-skill;
+  background: -webkit-linear-gradient(45deg, $blue-sky-skill, $green-skill);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
