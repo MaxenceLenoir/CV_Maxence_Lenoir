@@ -1,0 +1,119 @@
+.banner-curiculum {
+  height: 100vh;
+  box-sizing: border-box;
+  color: $light-gray;
+  overflow: hidden;
+}
+
+#index {
+  height: 100%;
+  background: $black-cv;
+  perspective: 100000px;
+  display: flex;
+}
+
+#index .loaded .matrix {
+  height: 100vh;
+}
+
+#index.loaded {
+  animation: perspective 20s 5s alternate infinite;
+}
+
+.matrix {
+  height: 0;
+  max-height: 100%;
+  position: relative;
+  top: 0;
+  padding: 0 5px;
+  color: $green-skill;
+  text-shadow: 0 1px 2px $green-skill;
+  letter-spacing: 2px;
+  animation: growing 5s;
+  animation-fill-mode: forwards;
+  border-radius: 0 5px 5px 0;
+  flex: 1 0 auto;
+  white-space: nowrap;
+  writing-mode: vertical-lr;
+  overflow: hidden;
+}
+
+@keyframes perspective{
+  50%{
+    perspective: 1px;
+  }
+}
+
+@keyframes growing{
+  100%{
+    height: 100%;
+  }
+}
+
+.banner-cv {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.banner-cv .box {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: $black-cv;
+  float: left;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner-cv .box:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background: #1d1d1d;
+  box-shadow: 0 1px 4px #000;
+  transition: 2s ease-in-out;
+}
+
+.banner-cv .box:hover:before {
+  transition: 0s ease-in-out;
+}
+
+.banner-cv .box:nth-child(6n+6):hover:before {
+  background: $pink-skill;
+  box-shadow: 0 0 3px $pink-skill,
+              0 0 10px $pink-skill;
+}
+
+.banner-cv .box:nth-child(6n+5):hover:before {
+  background: $red-skill;
+  box-shadow: 0 0 3px $red-skill,
+              0 0 10px $red-skill;
+}
+
+.banner-cv .box:nth-child(6n+4):hover:before {
+  background: $orange-skill;
+  box-shadow: 0 0 3px $orange-skill,
+              0 0 10px $orange-skill;
+}
+
+.banner-cv .box:nth-child(6n+3):hover:before {
+  background: $yellow-skill;
+  box-shadow: 0 0 3px $yellow-skill,
+              0 0 10px $yellow-skill;
+}
+
+.banner-cv .box:nth-child(6n+2):hover:before {
+  background: $green-skill;
+  box-shadow: 0 0 3px $green-skill,
+              0 0 10px $green-skill;
+}
+
+.banner-cv .box:nth-child(6n+1):hover:before {
+  background: $blue-sky-skill;
+  box-shadow: 0 0 3px $blue-sky-skill,
+              0 0 10px $blue-sky-skill;
+}

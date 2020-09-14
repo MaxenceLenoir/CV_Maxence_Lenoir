@@ -1,9 +1,13 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Baloo+2:wght@400;700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font: "Baloo 2";
+$headers-font: "Averia Serif Libre";
+
+h1 {
+  font-size: 4rem !important;
+}
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

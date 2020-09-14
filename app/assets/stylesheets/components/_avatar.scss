@@ -6,6 +6,15 @@
   width: 56px;
   border-radius: 50%;
 }
+
+.avatar-big {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border: white 3px solid;
+}
+
 .avatar-bordered {
   width: 40px;
   border-radius: 50%;

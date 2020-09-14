@@ -1,2 +1,59 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner-curiculum">
+  <div class="monitor">
+    <div id="index">
+    </div>
+  </div>
+</div>
+    <h1 data-splitting class="text-center">Maxence Lenoir</h1>
+    <h2>Developpeur Full-Stack</h2>
+
+<div class="container">
+  <h3>About me</h3>
+  <%= image_tag "profil.jpg", class: "avatar-big" %>
+  <h3>Skills</h3>
+  <div class="container-levels">
+    <% @levels.each do |level| %>
+      <div class="wrapper">
+        <div class="card-level <%= level %>">
+          <%= level %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="container-skills">
+    <% @skills.each do |skill| %>
+      <div class="wrapper">
+        <div class="card-skill <%= skill.level %>">
+          <div class="card-skill-img">
+            <svg height="100px" width="100px" viewBox="0 0 128 128">
+              <%= skill.svg_path.html_safe %>
+            </svg>
+          </div>
+          <div class="card-skill-content">
+            <div><%= skill.name %></div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <h3>My Projects</h3>
+  <footer>
+   <ul class="social-icons">
+      <li>
+        <%= link_to 'https://github.com/MaxenceLenoir' do  %>
+          <i class="fab fa-github"></i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to 'https://www.linkedin.com/in/maxence-lenoir-30a73b75/' do  %>
+          <i class="fab fa-linkedin-in"></i>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to '#' do  %>
+          <i class="far fa-envelope"></i>
+        <% end %>
+      </li>
+    </ul>
+  </footer>
+</div>
