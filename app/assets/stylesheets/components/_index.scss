@@ -13,4 +13,23 @@
 
 .text-paragraphe {
   color: $light-gray;
+  text-align: justify;
 }
+
+.text-motivation {
+  color: $green-skill;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.without-decoration {
+  text-decoration: none !important;
+}
+
+@media (min-width: 992px) {
+  .text-paragraphe {
+    margin : 0 10%;
+  }
+}
+

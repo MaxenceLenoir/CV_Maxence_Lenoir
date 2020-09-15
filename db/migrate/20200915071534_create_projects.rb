@@ -8,6 +8,7 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.string :description
       t.string :client
       t.string :url
+      t.string :asset_url
       t.timestamps
     end
   end

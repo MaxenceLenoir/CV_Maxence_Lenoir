@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_071534) do
     t.string "description"
     t.string "client"
     t.string "url"
+    t.string "asset_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

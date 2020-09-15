@@ -8,10 +8,10 @@
 </div>
 
 <div class="container">
-  <h3 class="text-center">A propos de moi</h3>
-  <p class="text-paragraphe">Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le développement Web. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation proposée par <%= link_to "Le Wagon", "https://www.lewagon.com" %>  entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou de d'autres formations sur divers langages de programation.</p>
-  <%= image_tag "profil.jpg", class: "avatar-big" %>
-  <h3 class="text-center">Skills</h3>
+  <h3 class="text-center mt-5 mb-2">A propos de moi</h3>
+  <p class="text-paragraphe">Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le développement Web. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation proposée par <%= link_to "Le Wagon", "https://www.lewagon.com", class: "without-decoration color-green" %>  entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou d'autres formations sur divers langages de programmation.</p>
+  <p class="text-motivation">A la recherche de nouveaux défis !</p>
+  <h3 class="text-center mt-5">Compétences</h3>
   <div class="container-levels">
     <% @levels.each do |level| %>
       <div class="wrapper">
@@ -37,30 +37,33 @@
       </div>
     <% end %>
   </div>
-  <h3 class="text-center">My Projects</h3>
+  <h3 class="text-center mt-5 mb-2">Mes Projets</h3>
     <div class="grid-projects">
       <% @projects.each do |project| %>
         <div class="grid-col-projects">
+        <%= link_to project.url, target: "_blank", class: "without-decoration" do %>
           <div class="card-project">
-            <div class="card-project-image">
+            <div class="card-project-image" style="background-image: url('/assets/<%= project.asset_url %>');">
             </div>
-            <div class="card-project-image-hovered">
+            <div class="card-project-image-hovered" style="background-image: url('/assets/<%= project.asset_url %>');">
             </div>
             <div class="card-project-content">
               <h4><%= project.name %></h4>
-              <div><%= project.description %></div>
-              <ul>
+              <div class="mb-2"><%= project.description %></div>
+              <ul class="font-italic">
                 <li><%= project.skill_one %></li>
                 <li><%= project.skill_two %></li>
                 <li><%= project.skill_three %></li>
               </ul>
             </div>
           </div>
+        <% end %>
         </div>
       <% end %>
     </div>
   <footer>
-   <ul class="social-icons">
+    <h3 class="text-center mt-5 mb-2">Me contacter</h3>
+    <ul class="social-icons">
       <li>
         <%= link_to 'https://github.com/MaxenceLenoir' do  %>
           <i class="fab fa-github"></i>

@@ -16,3 +16,10 @@ $orange-skill: #d47f00;
 $pink-skill: #d400c9;
 $yellow-skill: #e2e600;
 
+.color-green {
+  color: $green-skill;
+  &:hover {
+    color: $green-skill;
+    opacity: 0.8;
+  }
+}
