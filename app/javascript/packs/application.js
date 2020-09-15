@@ -27,6 +27,7 @@ import "bootstrap";
 import { matrixShow } from "../plugins/matrix";
 // import { Splitting } from "../plugins/splitting";
 import { loadDynamicBannerText } from "../plugins/typed"
+import { scrollBarEffect } from "../plugins/scrollBar"
 // import { bannerEffect } from "../plugins/banner";
 
 // Internal imports, e.g:
@@ -34,6 +35,7 @@ import { loadDynamicBannerText } from "../plugins/typed"
 
 document.addEventListener('turbolinks:load', () => {
   // Splitting();
+  scrollBarEffect();
   matrixShow();
   setTimeout(loadDynamicBannerText, 6100);
   // bannerEffect();
