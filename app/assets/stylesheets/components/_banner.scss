@@ -133,3 +133,21 @@
   box-shadow: 0 0 3px $blue-sky-skill,
               0 0 10px $blue-sky-skill;
 }
+
+@media (max-width: 790px) {
+  .banner-title{
+    font-size: 52px;
+  }
+  .typed-cursor {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 630px) {
+  .banner-title{
+    font-size: 40px;
+  }
+  .typed-cursor {
+    font-size: 40px;
+  }
+}
