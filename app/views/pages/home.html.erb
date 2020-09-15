@@ -43,9 +43,9 @@
         <div class="grid-col-projects">
         <%= link_to project.url, target: "_blank", class: "without-decoration" do %>
           <div class="card-project">
-            <div class="card-project-image" style="background-image: url('/assets/<%= project.asset_url %>');">
+            <div class="card-project-image" style="background-image: url('<%= image_path project.asset_url %>');">
             </div>
-            <div class="card-project-image-hovered" style="background-image: url('/assets/<%= project.asset_url %>');">
+            <div class="card-project-image-hovered" style="background-image: url('<%= image_path project.asset_url %>');">
             </div>
             <div class="card-project-content">
               <h4><%= project.name %></h4>
