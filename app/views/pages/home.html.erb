@@ -38,6 +38,27 @@
     <% end %>
   </div>
   <h3 class="text-center">My Projects</h3>
+    <div class="grid-projects">
+      <% @projects.each do |project| %>
+        <div class="grid-col-projects">
+          <div class="card-project">
+            <div class="card-project-image">
+            </div>
+            <div class="card-project-image-hovered">
+            </div>
+            <div class="card-project-content">
+              <h4><%= project.name %></h4>
+              <div><%= project.description %></div>
+              <ul>
+                <li><%= project.skill_one %></li>
+                <li><%= project.skill_two %></li>
+                <li><%= project.skill_three %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   <footer>
    <ul class="social-icons">
       <li>

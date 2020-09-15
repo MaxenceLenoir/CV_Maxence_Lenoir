@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   margin: 20px;
-  transition: 0.5s;
+  transition: 0.3s;
   background: #060b1f;
   &:hover {
     height: 140px;
@@ -25,7 +25,7 @@
   svg {
     max-width: 100%;
     opacity: 0.3;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 
@@ -42,7 +42,7 @@
   height: 30px;
   text-align: center;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
   color: $light-gray;
 }
 
@@ -140,3 +140,82 @@
   filter: blur(40px);
   background: linear-gradient(235deg,$red-skill,$black-cv,$red-skill);
 }
+
+// card project css
+
+:root {
+  --card-project-image-width: 100%;
+}
+
+.card-project {
+  align-self: flex-start;
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  transition: all 300ms ease-in-out;
+  border-radius: 20px;
+
+  .card-project-image {
+    width: --card-project-image-width;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: asset-url('AirbnBike.JPG');
+  }
+  
+  .card-project-image-hovered {
+    --card-img-hovered-overlay: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    );
+    transition: all 350ms ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: asset-url('AirbnBike.JPG');
+    height: 100%;
+    position: absolute;
+    width: var(--card-project-image-width);
+    top: 0;
+    border-radius: 20px;
+  }
+
+  .card-project-content {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 4px;
+    right: 0;
+    transition: all 350ms ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1),
+      0px 5px 15px rgba(0, 0, 0, 0.07);
+    transform: scale(1.025);
+
+    .card-project-image-hovered {
+      --card-project-image-hovered-overlay: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.65)
+      );
+      width: 50%;
+      border-radius: 20px 0 0 20px;
+    }
+    .card-project-content {
+      opacity: 1;
+    }
+  }
+
+
+}
+

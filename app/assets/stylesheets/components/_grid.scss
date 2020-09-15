@@ -1,0 +1,16 @@
+.grid-projects {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-gap: 20px;
+}
+
+.grid-col-projects {
+  grid-column: 100%;
+}
+
+@media (max-width: 992px) {
+  .grid-projects {
+  grid-template-columns: repeat(1, 100%);
+  }
+}
