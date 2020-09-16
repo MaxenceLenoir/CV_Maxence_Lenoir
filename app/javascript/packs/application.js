@@ -28,6 +28,7 @@ import { matrixShow } from "../plugins/matrix";
 // import { Splitting } from "../plugins/splitting";
 import { loadDynamicBannerText } from "../plugins/typed"
 import { scrollBarEffect } from "../plugins/scrollBar"
+import { phoneNumberEffect } from "../plugins/phoneNumber"
 // import { bannerEffect } from "../plugins/banner";
 
 // Internal imports, e.g:
@@ -36,6 +37,7 @@ import { scrollBarEffect } from "../plugins/scrollBar"
 document.addEventListener('turbolinks:load', () => {
   // Splitting();
   scrollBarEffect();
+  phoneNumberEffect();
   matrixShow();
   setTimeout(loadDynamicBannerText, 6100);
   // bannerEffect();

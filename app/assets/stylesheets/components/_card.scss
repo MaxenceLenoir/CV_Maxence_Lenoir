@@ -215,7 +215,13 @@
       opacity: 1;
     }
   }
-
-
 }
 
+@media (max-width: 630px) {
+  .card-project .card-project-content{
+    max-width: 70%;
+  }
+  .card-project:hover .card-project-image-hovered {
+    width: 30%;
+  }
+}

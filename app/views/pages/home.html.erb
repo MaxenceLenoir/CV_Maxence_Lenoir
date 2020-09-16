@@ -65,20 +65,26 @@
     <h3 class="text-center mt-5 mb-2">Me contacter</h3>
     <ul class="social-icons">
       <li>
-        <%= link_to 'https://github.com/MaxenceLenoir' do  %>
+        <%= link_to 'https://github.com/MaxenceLenoir', target: "_blank" do  %>
           <i class="fab fa-github"></i>
         <% end %>
       </li>
       <li>
-        <%= link_to 'https://www.linkedin.com/in/maxence-lenoir-30a73b75/' do  %>
+        <%= link_to 'https://www.linkedin.com/in/maxence-lenoir-30a73b75/', target: "_blank" do  %>
           <i class="fab fa-linkedin-in"></i>
         <% end %>
       </li>
       <li>
-        <%= link_to '#' do  %>
+        <%= mail_to "maxence.lenoir1206@gmail.com", target: "_blank" do  %>
           <i class="far fa-envelope"></i>
         <% end %>
       </li>
+      <li>
+        <%= link_to "#", onclick: "return false;"  do %>
+          <i class="fas fa-phone"></i>
+        <% end %>
+      </li>
     </ul>
+    <div class="phone-number">07 61 60 05 52</div>
   </footer>
 </div>

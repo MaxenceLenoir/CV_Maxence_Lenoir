@@ -30,7 +30,7 @@ Skill.create!(name: "Heroku", level: "beginner", svg_path: '<path fill="#fff" d=
 puts "Creating some projects ..."
 
 Project.create!(name: "AirbnBike", url: "https://airbnbikes.herokuapp.com/", skill_one: "Airbnb like - Market place", skill_two: "Système de paiement - Stripe", skill_three: "Géomapping & géolocalisation - Mapbox", description: "Market place permettant de mettre en relation des cyclistes occasionnels.", client: "1er projet du Wagon", asset_url: 'AirbnBike.JPG')
-Project.create!(name: "HomeBoard", url: "https://home-board.herokuapp.com/", skill_one: "Chat live - Action Cable", skill_two: "Notifications en temps réel - Action Cable", skill_three: "Authentification & Authorization",  description: "Application qui permet de gérer sa vie de propriétaire et améliorer les relations de voisinages au travers de services", client: "Projet final du Wagon", asset_url: 'Homeboard.JPG')
+Project.create!(name: "HomeBoard", url: " https://mynewhomeboard.herokuapp.com/", skill_one: "Chat live - Action Cable", skill_two: "Notifications en temps réel - Action Cable", skill_three: "Authentification & Authorization",  description: "Application qui permet de gérer sa vie de propriétaire et améliorer les relations de voisinages au travers de services", client: "Projet final du Wagon", asset_url: 'Homeboard.JPG')
 
 puts "Finished !"
 
