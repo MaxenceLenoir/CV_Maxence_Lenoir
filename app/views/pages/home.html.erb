@@ -8,15 +8,15 @@
 </div>
 
 <div class="container">
-  <h3 class="text-center mt-5 mb-2">A propos de moi</h3>
-  <p class="text-paragraphe">Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le développement Web. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation proposée par <%= link_to "Le Wagon", "https://www.lewagon.com", class: "without-decoration color-green" %>  entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou d'autres formations sur divers langages de programmation.</p>
-  <p class="text-motivation">A la recherche de nouveaux défis !</p>
-  <h3 class="text-center mt-5">Compétences</h3>
+  <h3 class="text-center mt-5 mb-2"><%= t('about-me') %></h3>
+  <p class="text-paragraphe"><%= t('description_first') %><%= link_to " Le Wagon ", "https://www.lewagon.com", class: "without-decoration color-green" %><%= t('description_second') %></p>
+  <p class="text-motivation"><%= t('description_third') %></p>
+  <h3 class="text-center mt-5"><%= t('skills') %></h3>
   <div class="container-levels">
     <% @levels.each do |level| %>
       <div class="wrapper">
         <div class="card-level <%= level %>">
-          <%= level %>
+          <%= t(level) %>
         </div>
       </div>
     <% end %>
@@ -37,7 +37,7 @@
       </div>
     <% end %>
   </div>
-  <h3 class="text-center mt-5 mb-2">Mes Projets</h3>
+  <h3 class="text-center mt-5 mb-2"><%= t('projects')%></h3>
     <div class="grid-projects">
       <% @projects.each do |project| %>
         <div class="grid-col-projects">
@@ -62,7 +62,7 @@
       <% end %>
     </div>
   <footer>
-    <h3 class="text-center mt-5 mb-2">Me contacter</h3>
+    <h3 class="text-center mt-5 mb-2"><%= t('contact') %></h3>
     <ul class="social-icons">
       <li>
         <%= link_to 'https://github.com/MaxenceLenoir', target: "_blank" do  %>
