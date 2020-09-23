@@ -29,9 +29,21 @@ Skill.create!(name: "Heroku", level: "beginner", svg_path: '<path fill="#fff" d=
 
 puts "Creating some projects ..."
 
-Project.create!(name: "GratteTonChomage", url: "http://www.grattetonchomage.fr/", skill_one: "Calcul allocation - Back-end", skill_two: "Export PDF - Gem wicked-pdf", skill_three: "Formulaire AJAX gestions erreurs", description: "Application qui permet de faciliter l'accès au chomage pour les personnes revenant de V.I.", client: "projet perso", asset_url: 'Grattetonchomage.JPG')
-Project.create!(name: "HomeBoard", url: " https://mynewhomeboard.herokuapp.com/", skill_one: "Chat live - Action Cable", skill_two: "Notifications en temps réel - Action Cable", skill_three: "Authentification & Authorization",  description: "Application qui permet de gérer sa vie de propriétaire et améliorer les relations de voisinages au travers de services.", client: "Projet final du Wagon", asset_url: 'Homeboard.JPG')
-Project.create!(name: "AirbnBike", url: "https://airbnbikes.herokuapp.com/", skill_one: "Airbnb like - Market place", skill_two: "Système de paiement - Stripe", skill_three: "Géomapping & géolocalisation - Mapbox", description: "Market place permettant de mettre en relation des cyclistes occasionnels.", client: "1er projet du Wagon", asset_url: 'AirbnBike.JPG')
+gratte_ton_chomage = Project.new(name: "GratteTonChomage", url: "http://www.grattetonchomage.fr/", skill_one: "Calcul allocation - Back-end", skill_two: "Export PDF - Gem wicked-pdf", skill_three: "Formulaire AJAX gestions erreurs", description: "Application qui permet de faciliter l'accès au chomage pour les personnes revenant de V.I.", client: "projet perso", asset_url: 'Grattetonchomage.JPG')
+gratte_ton_chomage.save!
+homeboard = Project.new(name: "HomeBoard", url: " https://mynewhomeboard.herokuapp.com/", skill_one: "Chat live - Action Cable", skill_two: "Notifications en temps réel - Action Cable", skill_three: "Authentification & Authorization",  description: "Application qui permet de gérer sa vie de propriétaire et améliorer les relations de voisinages au travers de services.", client: "Projet final du Wagon", asset_url: 'Homeboard.JPG')
+homeboard.save!
+airbnbike = Project.new(name: "AirbnBike", url: "https://airbnbikes.herokuapp.com/", skill_one: "Airbnb like - Market place", skill_two: "Système de paiement - Stripe", skill_three: "Géomapping & géolocalisation - Mapbox", description: "Market place permettant de mettre en relation des cyclistes occasionnels.", client: "1er projet du Wagon", asset_url: 'AirbnBike.JPG')
+airbnbike.save!
+
+puts "Traduction ..."
+
+gratte_ton_chomage.attributes = { skill_one: 'Allowance calculation - Back-end', skill_two: 'PDF Export - Gem wicked-pdf', skill_three: 'AJAX form to handle errors', description: "Application to facilitate access to unemployment benefits after international experience.", client: "Personal project", locale: :en }
+gratte_ton_chomage.save!
+homeboard.attributes = { skill_one: 'Chat live - Action Cable', skill_two: 'Real time notifications - Action Cable', skill_three: 'Authentification & Authorization', description: "Application for appartment owner who expect to make new relationship based on services", client: "Final project Le Wagon", locale: :en }
+homeboard.save!
+airbnbike.attributes = { skill_one: 'Airbnb like - Market place', skill_two: 'Payment system - Stripe', skill_three: 'Geomapping & Geolocalization - Mapbox', description: "Market place for bike lovers.", client: "1st project Le Wagon", locale: :en }
+airbnbike.save!
 
 puts "Finished !"
 

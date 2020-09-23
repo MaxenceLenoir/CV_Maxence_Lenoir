@@ -15,15 +15,24 @@ ActiveRecord::Schema.define(version: 2020_09_15_071534) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "projects", force: :cascade do |t|
-    t.string "name"
-    t.string "skill_one"
+  create_table "project_translations", force: :cascade do |t|
+    t.bigint "project_id", null: false
+    t.string "locale", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "skill_one", null: false
     t.string "skill_two"
     t.string "skill_three"
     t.string "description"
     t.string "client"
+    t.index ["locale"], name: "index_project_translations_on_locale"
+    t.index ["project_id"], name: "index_project_translations_on_project_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
     t.string "url"
     t.string "asset_url"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
