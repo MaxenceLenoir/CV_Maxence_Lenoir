@@ -1,6 +1,13 @@
 <div class="banner-curiculum">
   <div class="monitor">
     <%= image_tag "logo-apple.png", class: "logo" %>
+    <div class="banner-languages">
+      <% @languages.each do |language, sym| %>
+        <%= link_to root_path(locale: sym), class: "without-decoration" do %>
+          <%= image_tag "#{language}.png", class: "icon-flag" %>
+        <% end %>
+      <% end %>
+    </div>
     <div id="index">
     </div>
     <span class="banner-title" id="banner-typed-text"></span>

@@ -4,5 +4,21 @@ class PagesController < ApplicationController
     @skills = Skill.all.order(:name)
     @levels = ['beginner', 'intermediate', 'advanced']
     @projects = Project.all
+    if locale == :fr
+      @languages = {
+        Anglaise: :en,
+        Espagnole: :sp
+      }
+    elsif locale == :en
+      @languages = {
+        French: nil,
+        Spanish: :sp
+      }
+    else
+      @languages = {
+        Inglesa: :en,
+        Francesa: nil
+      }
+    end
   end
 end
