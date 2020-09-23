@@ -40,9 +40,15 @@ puts "Traduction ..."
 
 gratte_ton_chomage.attributes = { skill_one: 'Allowance calculation - Back-end', skill_two: 'PDF Export - Gem wicked-pdf', skill_three: 'AJAX form to handle errors', description: "Application to facilitate access to unemployment benefits after international experience.", client: "Personal project", locale: :en }
 gratte_ton_chomage.save!
-homeboard.attributes = { skill_one: 'Chat live - Action Cable', skill_two: 'Real time notifications - Action Cable', skill_three: 'Authentification & Authorization', description: "Application for appartment owner who expect to make new relationship based on services", client: "Final project Le Wagon", locale: :en }
+homeboard.attributes = { skill_one: 'Chat live - Action Cable', skill_two: 'Real time notifications - Action Cable', skill_three: 'Authentification & Authorization', description: "Application for appartment owner who expect to make new relationship based on services.", client: "Final project Le Wagon", locale: :en }
 homeboard.save!
 airbnbike.attributes = { skill_one: 'Airbnb like - Market place', skill_two: 'Payment system - Stripe', skill_three: 'Geomapping & Geolocalization - Mapbox', description: "Market place for bike lovers.", client: "1st project Le Wagon", locale: :en }
+airbnbike.save!
+gratte_ton_chomage.attributes = { skill_one: 'calculo prestación desempleo - Back-end', skill_two: 'Exportación PDF - Gem wicked-pdf', skill_three: 'Formulario AJAX para manejar errores', description: "Aplicación para facilitar accesso al derecho al desempleo despúes de una experiencia internacional.", client: "Proyecto personal", locale: :sp }
+gratte_ton_chomage.save!
+homeboard.attributes = { skill_one: 'Chat en vivo - Action Cable', skill_two: 'notificaciones en tiempo real - Action Cable', skill_three: 'Authentification & Authorization', description: "Aplicación para dueño de apartamento esperando oportunidades del vecindad.", client: "Proyecto final Le Wagon", locale: :sp }
+homeboard.save!
+airbnbike.attributes = { skill_one: 'Airbnb like - Market place', skill_two: 'Sistema de pago - Stripe', skill_three: 'Geomapping & Geolocalization - Mapbox', description: "Market place para los aficionados de la bicicleta.", client: "Proyecto 1 Le Wagon", locale: :sp }
 airbnbike.save!
 
 puts "Finished !"
