@@ -31,13 +31,13 @@
 
 en:
   about-me: "About me"
-  description_first: "I've graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp by"
-  description_second: "entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou d'autres formations sur divers langages de programmation."
+  description_first: "I've graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp from"
+  description_second: "between July and September 2020. Since then, I develop my knowledge in this area thanks to personal projects or other formations on various programming languages."
   description_third: "Looking for new projects !"
-  skills: "Compétences"
-  beginner: "débutant"
-  intermediate: "intermédiaire"
-  advanced: "avancé"
-  projects: "Mes Projets"
-  contact: "Me contacter"
+  skills: "Skills"
+  beginner: "beginner"
+  intermediate: "intermediate"
+  advanced: "advanced"
+  projects: "My projects"
+  contact: "Contact me"
   
