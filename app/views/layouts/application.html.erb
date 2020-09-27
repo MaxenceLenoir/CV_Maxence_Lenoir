@@ -35,7 +35,22 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <script type="text/javascript">
+    function waitForElement(){
+      if(typeof I18n !== "undefined"){
+        I18n.default_locale = "<%= I18n.default_locale %>";
+        I18n.locale = "<%= I18n.locale %>";
+        console.log(I18n);
+        I18n.translations = <%== I18n::JS.filtered_translations.to_json %>;
+      }
+      else{
+        setTimeout(waitForElement, 10);
+      }
+    }
+    waitForElement();
+    </script>
     <%= favicon_link_tag %>
+
 
   </head>
 

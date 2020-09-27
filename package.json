@@ -8,6 +8,7 @@
     "@rails/webpacker": "4.3.0",
     "bootstrap": "^4.5.2",
     "i": "^0.3.6",
+    "i18n-js": "^3.7.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "splitting": "^1.0.6",

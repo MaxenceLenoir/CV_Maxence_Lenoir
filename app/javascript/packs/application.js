@@ -26,9 +26,13 @@ require("channels")
 import "bootstrap";
 import { matrixShow } from "../plugins/matrix";
 // import { Splitting } from "../plugins/splitting";
-import { loadDynamicBannerText } from "../plugins/typed"
-import { scrollBarEffect } from "../plugins/scrollBar"
-import { phoneNumberEffect } from "../plugins/phoneNumber"
+import { loadDynamicBannerText } from "../plugins/typed";
+import { scrollBarEffect } from "../plugins/scrollBar";
+import { phoneNumberEffect } from "../plugins/phoneNumber";
+//= require i18n.js
+//= require i18n/translations
+import I18n from "i18n-js";
+
 // import { bannerEffect } from "../plugins/banner";
 
 // Internal imports, e.g:
@@ -36,6 +40,7 @@ import { phoneNumberEffect } from "../plugins/phoneNumber"
 
 document.addEventListener('turbolinks:load', () => {
   // Splitting();
+  global.I18n = I18n;
   scrollBarEffect();
   phoneNumberEffect();
   matrixShow();

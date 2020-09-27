@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'i18n'
-gem "i18n-js"
+gem 'i18n-js'
 gem 'globalize', '~> 5.3.0'
 
 # Use Active Storage variant
