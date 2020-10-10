@@ -1,3 +1,5 @@
+import { loadDynamicBannerText } from './typed'
+
 function matrixShow(){
   const banner = document.querySelector(".banner-curiculum");
   if (banner) {
@@ -39,6 +41,7 @@ function matrixShow(){
     function desinit(){
       clearInterval(myInterval);
       index.remove();
+      setTimeout(loadDynamicBannerText, 100)
     }
 
     setTimeout(init, 1000);

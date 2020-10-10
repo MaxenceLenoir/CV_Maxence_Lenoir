@@ -4,7 +4,7 @@
     <div class="banner-languages">
       <% @languages.each do |language, sym| %>
         <%= link_to root_path(locale: sym), class: "without-decoration" do %>
-          <%= image_tag "#{language}.png", class: "icon-flag" %>
+          <%= image_tag "#{language}.png", class: "icon-flag", data: { turbolinks: false } %>
         <% end %>
       <% end %>
     </div>

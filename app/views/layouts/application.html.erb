@@ -40,7 +40,6 @@
       if(typeof I18n !== "undefined"){
         I18n.default_locale = "<%= I18n.default_locale %>";
         I18n.locale = "<%= I18n.locale %>";
-        console.log(I18n);
         I18n.translations = <%== I18n::JS.filtered_translations.to_json %>;
       }
       else{

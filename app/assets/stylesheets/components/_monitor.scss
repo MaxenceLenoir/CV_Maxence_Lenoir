@@ -1,5 +1,5 @@
 .monitor {
-  height: 83%;
+  height: 98%;
   background: black;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   border-bottom: 10vh solid #d8d8d8;
@@ -8,32 +8,6 @@
   border-right: 2vh solid #d8d8d8;
   border-radius: 10px;
   position: relative
-}
-
-.monitor:before{
-  content: '';
-  width: 20%;
-  height: 20vh;
-  background: #bdbdbd;
-  position: absolute;
-  left: 50%;
-  bottom: -20vh;
-  transform: perspective(100px) translateX(-50%);
-  z-index: -1;
-  transform-origin: bottom;
-}
-
-.monitor:after{
-  content: '';
-  width: 50%;
-  height: 5vh;
-  background: #d8d8d8;
-  position: absolute;
-  left: 50%;
-  bottom: -25vh;
-  transform: translateX(-50%);
-  z-index: 1;
-  transform-origin: bottom;
 }
 
 .logo {
@@ -46,4 +20,36 @@
   width: 7vh;
   height: 7vh;
   z-index: 2;
+}
+
+@media (min-width: 630px) {
+  .monitor:before{
+    content: '';
+    width: 20%;
+    height: 20vh;
+    background: #bdbdbd;
+    position: absolute;
+    left: 50%;
+    bottom: -20vh;
+    transform: perspective(100px) translateX(-50%);
+    z-index: -1;
+    transform-origin: bottom;
+  }
+  
+  .monitor:after{
+    content: '';
+    width: 50%;
+    height: 5vh;
+    background: #d8d8d8;
+    position: absolute;
+    left: 50%;
+    bottom: -25vh;
+    transform: translateX(-50%);
+    z-index: 1;
+    transform-origin: bottom;
+  }
+
+  .monitor{
+    height: 83%;
+  }
 }

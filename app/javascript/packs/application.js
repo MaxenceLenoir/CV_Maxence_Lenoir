@@ -44,6 +44,5 @@ document.addEventListener('turbolinks:load', () => {
   scrollBarEffect();
   phoneNumberEffect();
   matrixShow();
-  setTimeout(loadDynamicBannerText, 6100);
   // bannerEffect();
 });
