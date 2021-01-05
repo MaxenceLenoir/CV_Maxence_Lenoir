@@ -1,11 +1,16 @@
-fr :
-  about-me: "A propos de moi"
+fr:
+  dev: 'Developpeur web fullstack'
+  about-me: 'A propos de moi'
   description_first: "Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le développement Web. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation proposée par"
   description_second: "entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou d'autres formations sur divers langages de programmation."
-  description_third: "A la recherche de nouveaux défis !"
-  skills: "Compétences"
-  beginner: "débutant"
-  intermediate: "intermédiaire"
-  advanced: "avancé"
-  projects: "Mes Projets"
-  contact: "Me contacter"
+  Iam: 'Je suis'
+  skills: 'Compétences'
+  beginner: 'débutant'
+  intermediate: 'intermédiaire'
+  advanced: 'avancé'
+  projects: 'Mes Projets'
+  contact: 'Me contacter'
+  motivation: 'Motivé'
+  curious: 'Curieux'
+  fast-learner: 'Fast-learner'
+  challenges: 'En attente de nouveaux challenges'

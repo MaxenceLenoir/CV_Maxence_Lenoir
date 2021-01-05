@@ -1,23 +1,58 @@
 <div class="banner-curiculum">
-  <div class="monitor">
-    <%= image_tag "logo-apple.png", class: "logo" %>
-    <div class="banner-languages">
-      <% @languages.each do |language, sym| %>
-        <%= link_to root_path(locale: sym), class: "without-decoration" do %>
-          <%= image_tag "#{language}.png", class: "icon-flag", data: { turbolinks: false } %>
-        <% end %>
+  <div class="banner-text">
+    <div class="banner-title animate__animated animate__backInDown">
+      Maxence Lenoir
+    </div>
+    <div class="banner-subtitle animate__animated animate__backInDown">
+      <%= t('dev') %>
+    </div>
+  </div>
+  <div class="container-fullstack">
+    <div class="card-fullstack">
+      <i class="fas fa-code"></i>
+      <div class="name">Front-end</div>
+    </div>
+    <div class="card-fullstack">
+      <i class="fas fa-database"></i>
+      <div class="name">Back-end</div>
+    </div>
+    <div class="card-fullstack">
+      <i class="fas fa-laptop"></i>
+      <div class="name">Web Design</div>
+    </div>
+  </div>
+  <%= link_to "##{t('about-me').gsub(/\s/, '')}", class:"without-decoration color-orange scroll-down animate__animated animate__pulse animate__infinite" do %>
+    <i class="fa fa-angle-double-down"></i>
+  <% end %>
+  <div class="banner-languages">
+    <% @languages.each do |language, sym| %>
+      <%= link_to root_path(locale: sym), class: "without-decoration" do %>
+        <%= image_tag "#{language}.png", class: "icon-flag" %>
       <% end %>
-    </div>
-    <div id="index">
-    </div>
-    <span class="banner-title" id="banner-typed-text"></span>
+    <% end %>
   </div>
 </div>
 
 <div class="container">
-  <h3 class="text-center mt-5 mb-2"><%= t('about-me') %></h3>
-  <p class="text-paragraphe"><%= t('description_first') %><%= link_to " Le Wagon ", "https://www.lewagon.com", class: "without-decoration color-green" %><%= t('description_second') %></p>
-  <p class="text-motivation"><%= t('description_third') %></p>
+  <section id=<%= t('about-me').gsub(/\s/, '') %>>
+    <h3 class="text-center mt-5 mb-2"><%= t('about-me') %></h3>
+    <div class="card-pres">
+      <div class="image-char5"><%= image_tag('character_5.svg')%></div>
+      <div class="card-pres-intro">
+        <%= image_tag 'profile-pic.jpeg', class: "card-pres-av" %>
+        <div class="text-paragraphe"><%= t('description_first') %><%= link_to " Le Wagon ", "https://www.lewagon.com", class: "without-decoration color-orange" %><%= t('description_second') %></div>
+      </div>
+      <div class="motivation">
+        <div class="text-motivation"><%= t('Iam') %></div>
+        <div class="grid-motiv">
+            <%= t('motivation') %> <i class="fas fa-check-circle"></i>
+            <%= t('curious') %> <i class="fas fa-check-circle"></i>
+            <%= t('fast-learner') %> <i class="fas fa-check-circle"></i>              
+            <%= t('challenges') %> <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <h3 class="text-center mt-5"><%= t('skills') %></h3>
   <div class="container-levels">
     <% @levels.each do |level| %>
@@ -29,6 +64,7 @@
     <% end %>
   </div>
   <div class="container-skills">
+    <div class="image-char13"><%= image_tag('character_13.svg')%></div>
     <% @skills.each do |skill| %>
       <div class="wrapper">
         <div class="card-skill <%= skill.level %>">

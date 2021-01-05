@@ -30,7 +30,7 @@ footer {
 }
 
 .social-icons i {
-  color: #fff;
+  color: $darker-cv;
   position: absolute;
   top: 0.95em;
   left: 0.96em;
@@ -45,12 +45,12 @@ footer {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  content: " ";
+  content: ' ';
   width: 45px;
   height: 45px;
   border-radius: 100%;
   display: block;
-  background: linear-gradient(45deg, $blue-sky-skill, $green-skill);
+  background: linear-gradient(45deg, yellow, $orange);
   transition: all 265ms ease-out;
 }
 
@@ -63,8 +63,8 @@ footer {
   transform: scale(2.2);
   -ms-transform: scale(2.2);
   -webkit-transform: scale(2.2);
-  color: $blue-sky-skill;
-  background: -webkit-linear-gradient(45deg, $blue-sky-skill, $green-skill);
+  color: yellow;
+  background: -webkit-linear-gradient(45deg, yellow, $orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;

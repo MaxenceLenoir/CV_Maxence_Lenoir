@@ -1,3 +1,58 @@
+// card fullstack
+
+.card-fullstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $yellow;
+  i {
+    font-size: 50px;
+  }
+  .name {
+    font-size: 24px;
+  }
+}
+
+// card presentation
+
+.card-pres {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+  .image-char5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    width: 200px;
+    z-index: -1;
+  }
+  .card-pres-intro {
+    display: flex;
+    .card-pres-av {
+      width: 100px;
+      height: 100px;
+      border-radius: 10%;
+    }
+    .card-pres-desc {
+      width: calc(100% - 100px);
+    }
+  }
+  .motivation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      color: $orange;
+    }
+  }
+}
+
 // card skill css
 
 .card-skill {
@@ -8,7 +63,7 @@
   align-items: center;
   margin: 20px;
   transition: 0.3s;
-  background: #060b1f;
+  background: $darker-cv;
   &:hover {
     height: 140px;
   }
@@ -60,7 +115,7 @@
   align-items: center;
   justify-content: center;
   margin: 20px;
-  background: #060b1f;
+  background: $darker-cv;
   color: $light-gray;
 }
 
@@ -75,10 +130,10 @@
   bottom: -2px;
   background: #fff;
   z-index: -1;
-  background: linear-gradient(235deg,$yellow-skill,$black-cv,$yellow-skill);
+  background: linear-gradient(235deg, $yellow-skill, $black-cv, $yellow-skill);
 }
 
-.beginner::after{
+.beginner::after {
   content: '';
   position: absolute;
   top: -2px;
@@ -87,8 +142,8 @@
   bottom: -2px;
   background: #fff;
   z-index: -2;
-  filter: blur(40px);
-  background: linear-gradient(235deg,$yellow-skill,$black-cv,$yellow-skill);
+  filter: blur(20px);
+  background: linear-gradient(235deg, $yellow-skill, $black-cv, $yellow-skill);
 }
 
 .intermediate::before {
@@ -100,10 +155,10 @@
   bottom: -2px;
   background: #fff;
   z-index: -1;
-  background: linear-gradient(235deg,$orange-skill,$black-cv,$orange-skill);
+  background: linear-gradient(235deg, $orange-skill, $black-cv, $orange-skill);
 }
 
-.intermediate::after{
+.intermediate::after {
   content: '';
   position: absolute;
   top: -2px;
@@ -112,8 +167,8 @@
   bottom: -2px;
   background: #fff;
   z-index: -2;
-  filter: blur(40px);
-  background: linear-gradient(235deg,$orange-skill,$black-cv,$orange-skill);
+  filter: blur(20px);
+  background: linear-gradient(235deg, $orange-skill, $black-cv, $orange-skill);
 }
 
 .advanced::before {
@@ -125,10 +180,10 @@
   bottom: -2px;
   background: #fff;
   z-index: -1;
-  background: linear-gradient(235deg,$red-skill,$black-cv,$red-skill);
+  background: linear-gradient(235deg, $red-skill, $black-cv, $red-skill);
 }
 
-.advanced::after{
+.advanced::after {
   content: '';
   position: absolute;
   top: -2px;
@@ -137,8 +192,8 @@
   bottom: -2px;
   background: #fff;
   z-index: -2;
-  filter: blur(40px);
-  background: linear-gradient(235deg,$red-skill,$black-cv,$red-skill);
+  filter: blur(20px);
+  background: linear-gradient(235deg, $red-skill, $black-cv, $red-skill);
 }
 
 // card project css
@@ -164,7 +219,7 @@
     background-size: cover;
     border-radius: 20px;
   }
-  
+
   .card-project-image-hovered {
     --card-img-hovered-overlay: linear-gradient(
       to bottom,
@@ -198,8 +253,8 @@
 
   &:hover {
     cursor: pointer;
-    box-shadow: 3px 5px 20px rgba(31, 255, 1, 0.301),
-      3px 5px 10px rgba(9, 255, 0, 0.301);
+    box-shadow: 3px 5px 20px rgba($orange, 0.301),
+      3px 5px 10px rgba($orange, 0.301);
     transform: scale(1.025);
 
     .card-project-image-hovered {
@@ -218,7 +273,7 @@
 }
 
 @media (max-width: 630px) {
-  .card-project .card-project-content{
+  .card-project .card-project-content {
     max-width: 70%;
   }
   .card-project:hover .card-project-image-hovered {

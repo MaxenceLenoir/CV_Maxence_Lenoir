@@ -1,11 +1,16 @@
-sp :
-  about-me: "Quién soy"
-  description_first: "Ingeniero mecánico desde 2017, cambié de carrera en 2020 para ser desarrollador web. Ya estaba muy interessado por ese campo, pues decidí seguir una formación propuesta por"
-  description_second: "entre Julio et Septiembre 2020. Desde entonces, estoy desarrollando mi entendimiento y mis habilidades gracias a algunos proyectos personales o otras formaciones sobre diferentes lenguajes de programación."
-  description_third: "Buscando nuevos desafios !"
-  skills: "Competencias"
-  beginner: "principiante"
-  intermediate: "intermedio"
-  advanced: "avanzado"
-  projects: "Mis proyectos"
-  contact: "Contactos"
+sp:
+  dev: 'Desarollador web'
+  about-me: 'Quién soy'
+  description_first: 'Ingeniero mecánico desde 2017, cambié de carrera en 2020 para ser desarrollador web. Ya estaba muy interessado por ese campo, pues decidí seguir una formación propuesta por'
+  description_second: 'entre Julio et Septiembre 2020. Desde entonces, estoy desarrollando mi entendimiento y mis habilidades gracias a algunos proyectos personales o otras formaciones sobre diferentes lenguajes de programación.'
+  Iam: 'Estoy'
+  skills: 'Competencias'
+  beginner: 'principiante'
+  intermediate: 'intermedio'
+  advanced: 'avanzado'
+  projects: 'Mis proyectos'
+  contact: 'Contactos'
+  motivation: 'Motivado'
+  curious: 'Curioso'
+  fast-learner: 'Fast-learner'
+  challenges: 'Esperando nuevos desafíos'

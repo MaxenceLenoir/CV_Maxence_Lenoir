@@ -30,14 +30,18 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  about-me: "About me"
+  dev: 'Web developer'
+  about-me: 'About me'
   description_first: "I've graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp from"
-  description_second: "between July and September 2020. Since then, I develop my knowledge in this area thanks to personal projects or other formations on various programming languages."
-  description_third: "Looking for new projects !"
-  skills: "Skills"
-  beginner: "beginner"
-  intermediate: "intermediate"
-  advanced: "advanced"
-  projects: "My projects"
-  contact: "Contact me"
-  
+  description_second: 'between July and September 2020. Since then, I develop my knowledge in this area thanks to personal projects or other formations on various programming languages.'
+  Iam: 'I am'
+  skills: 'Skills'
+  beginner: 'beginner'
+  intermediate: 'intermediate'
+  advanced: 'advanced'
+  projects: 'My projects'
+  contact: 'Contact me'
+  motivation: 'Motivated'
+  curious: 'Curious'
+  fast-learner: 'Fast-learner'
+  challenges: 'Waiting for new challenges'
