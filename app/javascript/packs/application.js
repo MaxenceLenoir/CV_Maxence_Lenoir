@@ -34,17 +34,9 @@ import { game } from "../plugins/game";
 //= require i18n/translations
 import I18n from "i18n-js";
 
-// import { bannerEffect } from "../plugins/banner";
-
-// Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
-
 document.addEventListener('turbolinks:load', () => {
-  // Splitting();
   global.I18n = I18n;
   scrollBarEffect();
   phoneNumberEffect();
-  // matrixShow();
-  // bannerEffect();
   game();
 });

@@ -10,6 +10,19 @@
   flex-wrap: wrap;
 }
 
+.container-canvas {
+  height: 320px;
+  width: 100%;
+  display: flex;
+}
+
+.container-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+}
+
 .container-skills {
   display: flex;
   justify-content: center;
@@ -30,4 +43,10 @@
 
 .wrapper {
   opacity: 0.99;
+}
+
+@media (max-width: 900px) {
+  .container-game {
+    display: none;
+  }
 }

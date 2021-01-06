@@ -32,7 +32,7 @@
 en:
   dev: 'Web developer'
   about-me: 'About me'
-  description_first: "I've graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp from"
+  description_first: "I've graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp "
   description_second: 'between July and September 2020. Since then, I develop my knowledge in this area thanks to personal projects or other formations on various programming languages.'
   Iam: 'I am'
   skills: 'Skills'
@@ -45,3 +45,4 @@ en:
   curious: 'Curious'
   fast-learner: 'Fast-learner'
   challenges: 'Waiting for new challenges'
+  game: 'But if you fell a little by chance on this website, and my profile does not interest you especially but you have two minutes, I propose you a game coded in Javascript then do not hesitate'
