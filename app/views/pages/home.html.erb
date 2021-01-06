@@ -8,15 +8,15 @@
     </div>
   </div>
   <div class="container-fullstack">
-    <div class="card-fullstack">
+    <div class="card-fullstack animate__animated animate__fadeIn animate__delay-1s">
       <i class="fas fa-code"></i>
       <div class="name">Front-end</div>
     </div>
-    <div class="card-fullstack">
+    <div class="card-fullstack animate__animated animate__fadeIn animate__delay-2s">
       <i class="fas fa-database"></i>
       <div class="name">Back-end</div>
     </div>
-    <div class="card-fullstack">
+    <div class="card-fullstack animate__animated animate__fadeIn animate__delay-3s">
       <i class="fas fa-laptop"></i>
       <div class="name">Web Design</div>
     </div>
@@ -38,7 +38,8 @@
     <h3 class="text-center mt-5 mb-2"><%= t('about-me') %></h3>
     <div class="card-pres">
       <div class="image-char5"><%= image_tag('character_5.svg')%></div>
-      <div class="card-pres-intro">
+      <%= image_tag 'MacBook.png', class: "image-macbook" %>
+      <div class="card-pres-intro mb-5">
         <%= image_tag 'profile-pic.jpeg', class: "card-pres-av" %>
         <div class="text-paragraphe"><%= t('description_first') %><%= link_to " Le Wagon ", "https://www.lewagon.com", class: "without-decoration color-orange" %><%= t('description_second') %></div>
       </div>
@@ -104,7 +105,10 @@
         </div>
       <% end %>
     </div>
+  <h3 class="text-center mt-5 mn-2">Let's play</h3>
+  <canvas id="myCanvas" width="480" height="320"></canvas>
   <footer>
+    <div class="image-ipad"></div>
     <h3 class="text-center mt-5 mb-2"><%= t('contact') %></h3>
     <ul class="social-icons">
       <li>

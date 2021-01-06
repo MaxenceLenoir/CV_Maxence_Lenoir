@@ -29,6 +29,7 @@ import "bootstrap";
 // import { loadDynamicBannerText } from "../plugins/typed";
 import { scrollBarEffect } from "../plugins/scrollBar";
 import { phoneNumberEffect } from "../plugins/phoneNumber";
+import { game } from "../plugins/game";
 //= require i18n.js
 //= require i18n/translations
 import I18n from "i18n-js";
@@ -45,4 +46,5 @@ document.addEventListener('turbolinks:load', () => {
   phoneNumberEffect();
   // matrixShow();
   // bannerEffect();
+  game();
 });

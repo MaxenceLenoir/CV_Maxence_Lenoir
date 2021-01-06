@@ -1,0 +1,48 @@
+.image-char13 {
+  position: absolute;
+  height: 300px;
+  width: 200px;
+  z-index: -1;
+  bottom: -250px;
+  left: 0;
+}
+
+.image-char5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+  width: 200px;
+  z-index: -1;
+}
+
+.image-macbook {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 250px;
+  z-index: -1;
+}
+
+.image-ipad {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 250px;
+  z-index: -1;
+  background-image: linear-gradient(rgba($black-cv, 0.5), rgba($black-cv, 0.5)),
+    asset-url('iPad.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .image-macbook {
+    display: none;
+  }
+}
