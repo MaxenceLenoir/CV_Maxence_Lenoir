@@ -34,6 +34,8 @@ puts "#{Skill.count} skills created"
 
 puts "Creating some projects ..."
 
+resonances = Project.new(name: "Resonances", url: "https://www.resoances.group/", skill_one: "Système notification en temps réel", skill_two: "Interface Admin - Active Admin", skill_three: "Calcul de points basé sur les actions utilisateur", description: "Résonances aide les sociétés a être agiles et résilientes", client: "Arnaud Bonnefond", asset_url: 'Resonances.png')
+resonances.save!
 accessinnpattaya = Project.new(name: "Access Inn Pattaya", url: "https://www.accessinnpattaya.com/", skill_one: "Gestion back-end booking", skill_two: "Background Jobs - Tâches automatisées (Mails ...)", skill_three: "Intégration système paiement PayPal", description: "Site à destination d'un complexe hotelier Thailandais", client: "Hotel Access Inn Pattay", asset_url: 'AccessInnPattay.png')
 accessinnpattaya.save!
 gratte_ton_chomage = Project.new(name: "GratteTonChomage", url: "http://www.grattetonchomage.fr/", skill_one: "Calcul allocation - Back-end", skill_two: "Export PDF - Gem wicked-pdf", skill_three: "Formulaire AJAX gestions erreurs", description: "Application qui permet de faciliter l'accès au chomage pour les personnes revenant de V.I.", client: "projet perso", asset_url: 'Grattetonchomage.JPG')
@@ -47,6 +49,8 @@ puts "#{Project.count} projects created"
 
 puts "Traduction ..."
 
+resonances.attributes = { skill_one: 'Notification system in real time', skill_two: 'Admin Interface - Active Admin', skill_three: "Points calculation based on user's actions", description: "Resonances helps companies to be agile and resilient.", client: "Arnaud Bonnefond", locale: :en }
+resonances.save!
 accessinnpattaya.attributes = { skill_one: 'Booking - Back-end', skill_two: 'Background Job - automated tasks (mailer ...)', skill_three: 'Paypal payment', description: "Website for an thai hotel complex.", client: "Access Inn Pattay", locale: :en }
 accessinnpattaya.save!
 gratte_ton_chomage.attributes = { skill_one: 'Allowance calculation - Back-end', skill_two: 'PDF Export - Gem wicked-pdf', skill_three: 'AJAX form to handle errors', description: "Application to facilitate access to unemployment benefits after international experience.", client: "Personal project", locale: :en }
@@ -55,6 +59,8 @@ homeboard.attributes = { skill_one: 'Chat live - Action Cable', skill_two: 'Real
 homeboard.save!
 airbnbike.attributes = { skill_one: 'Airbnb like - Market place', skill_two: 'Payment system - Stripe', skill_three: 'Geomapping & Geolocalization - Mapbox', description: "Market place for bike lovers.", client: "1st project Le Wagon", locale: :en }
 airbnbike.save!
+resonances.attributes = { skill_one: 'Sistema de notificación en vivo', skill_two: 'Interfaz de Administración - Active Admin', skill_three: "Cálculo de puntos basado en acciones del usuario", description: "Resonances ayudo compañías para ser ágil y resistentes.", client: "Arnaud Bonnefond", locale: :en }
+resonances.save!
 accessinnpattaya.attributes = { skill_one: 'Reservacíon - Back end', skill_two: 'Background Job - tareas automatizadas (mails ...)', skill_three: 'Paypal pago', description: "Sitio web para um complejo hotelero tailandés", client: "Access Inn Pattay", locale: :sp }
 accessinnpattaya.save!
 gratte_ton_chomage.attributes = { skill_one: 'calculo prestación desempleo - Back-end', skill_two: 'Exportación PDF - Gem wicked-pdf', skill_three: 'Formulario AJAX para manejar errores', description: "Aplicación para facilitar accesso al derecho al desempleo despúes de una experiencia internacional.", client: "Proyecto personal", locale: :sp }
