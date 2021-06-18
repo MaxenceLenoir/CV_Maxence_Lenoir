@@ -3,7 +3,7 @@ class PagesController < ApplicationController
     # Skills in the seed
     @skills = Skill.all.order(:name)
     @levels = ['beginner', 'intermediate', 'advanced']
-    @projects = Project.all
+    @projects = Project.order(created_at: :asc)
     if locale == :fr
       @languages = {
         Anglaise: :en,
