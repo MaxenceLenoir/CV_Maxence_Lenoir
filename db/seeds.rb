@@ -66,9 +66,9 @@ homeboard.attributes = { skill_one: 'Chat live - Action Cable', skill_two: 'Real
 homeboard.save!
 airbnbike.attributes = { skill_one: 'Airbnb like - Market place', skill_two: 'Payment system - Stripe', skill_three: 'Geomapping & Geolocalization - Mapbox', description: "Market place for bike lovers.", client: "1st project Le Wagon", locale: :en }
 airbnbike.save!
-resonances.attributes = { skill_one: 'Sistema de notificación en vivo', skill_two: 'Interfaz de Administración - Active Admin', skill_three: "Cálculo de puntos basado en acciones del usuario", description: "Resonances ayudo compañías para ser ágil y resistentes.", client: "Arnaud Bonnefond", locale: :en }
+resonances.attributes = { skill_one: 'Sistema de notificación en vivo', skill_two: 'Interfaz de Administración - Active Admin', skill_three: "Cálculo de puntos basado en acciones del usuario", description: "Resonances ayudo compañías para ser ágil y resistentes.", client: "Arnaud Bonnefond", locale: :sp }
 resonances.save!
-obras.attributes = { skill_one: 'Front React JS', skill_two: 'Wizard form (Multi step)', skill_three: "Export PDF - gem Grover", description: "Plateforma web que simplifica la creación de documentos de seguridad para empresas de construcción.", client: "Proyecto Personal", locale: :en }
+obras.attributes = { skill_one: 'Front React JS', skill_two: 'Wizard form (Multi step)', skill_three: "Export PDF - gem Grover", description: "Plateforma web que simplifica la creación de documentos de seguridad para empresas de construcción.", client: "Proyecto Personal", locale: :sp }
 obras.save!
 accessinnpattaya.attributes = { skill_one: 'Reservacíon - Back end', skill_two: 'Background Job - tareas automatizadas (mails ...)', skill_three: 'Paypal pago', description: "Sitio web para um complejo hotelero tailandés", client: "Access Inn Pattay", locale: :sp }
 accessinnpattaya.save!
