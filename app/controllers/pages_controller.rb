@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
   def home
     # Skills in the seed
-    @skills = Skill.all.order(:name)
+    @skills = Skill::SKILLS.sort_by{ |s| s[:name] }
     @levels = ['beginner', 'intermediate', 'advanced']
-    @projects = Project.order(created_at: :asc)
+    @projects = Project::PROJECTS
     if locale == :fr
       @languages = {
         Anglaise: :en,

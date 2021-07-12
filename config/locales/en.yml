@@ -30,19 +30,50 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  dev: 'Web developer'
-  about-me: 'About me'
-  description_first: "I've graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp "
-  description_second: 'between July and September 2020. Since then, I develop my knowledge in this area thanks to personal projects or other formations on various programming languages.'
-  Iam: 'I am'
-  skills: 'Skills'
-  beginner: 'beginner'
-  intermediate: 'intermediate'
-  advanced: 'advanced'
-  projects: 'My projects'
-  contact: 'Contact me'
-  motivation: 'Motivated'
-  curious: 'Curious'
-  fast-learner: 'Fast-learner'
-  challenges: 'Waiting for new challenges'
-  game: 'But if you fell a little by chance on this website, and my profile does not interest you especially but you have two minutes, I propose you a game coded in Javascript then do not hesitate'
+  dev: Web developer
+  about-me: About me
+  description_first: "Ive graduated as an mechanichal engineer on 2017, but I decided to follow another way into Web Development in 2020. I always felt interest for informatic field, so I decided to follow a bootcamp "
+  description_second: between July and September 2020. Since then, I develop my knowledge in this area thanks to personal projects or other formations on various programming languages.
+  Iam: I am
+  skills: Skills
+  beginner: beginner
+  intermediate: intermediate
+  advanced: advanced
+  projects: My projects
+  contact: Contact me
+  motivation: Motivated
+  curious: Curious
+  fast-learner: Fast-learner
+  challenges: Waiting for new challenges
+  game: But if you fell a little by chance on this website, and my profile does not interest you especially but you have two minutes, I propose you a game coded in Javascript then do not hesitate
+  projects_detail:
+    resonances:
+      skill_one: Notification system in real time
+      skill_two: Admin Interface - Active Admin
+      skill_three: Points calculation based on user's actions
+      description: Resonances helps companies to be agile and resilient.
+    obras:
+      skill_one: Front React JS
+      skill_two: Wizard form (Multi step)
+      skill_three: Export PDF - gem Grover
+      description: Web plateform which simplify security documents creation for construction companies.
+    access_inn_pattaya:
+      skill_one: Booking - Back-end
+      skill_two: Background Job - automated tasks (mailer ...)
+      skill_three: Paypal payment
+      description: Website for an thai hotel complex.
+    gratte_ton_chomage:
+      skill_one: Allowance calculation - Back-end
+      skill_two: PDF Export - Gem wicked-pdf
+      skill_three: AJAX form to handle errors
+      description: Application to facilitate access to unemployment benefits after international experience.
+    homeboard:
+      skill_one: Chat live - Action Cable
+      skill_two: Real time notifications - Action Cable
+      skill_three: Authentification & Authorization
+      description: Application for appartment owner who expect to make new relationship based on services.
+    airbnbike:
+      skill_one: Airbnb like - Market place
+      skill_two: Payment system - Stripe
+      skill_three: Geomapping & Geolocalization - Mapbox
+      description: Market place for bike lovers.

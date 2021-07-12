@@ -1,17 +1,48 @@
 sp:
-  dev: 'Desarollador web'
-  about-me: 'Quién soy'
-  description_first: 'Ingeniero mecánico desde 2017, cambié de carrera en 2020 para ser desarrollador web. Ya estaba muy interessado por ese campo, pues decidí seguir una formación propuesta por'
-  description_second: 'entre Julio et Septiembre 2020. Desde entonces, estoy desarrollando mi entendimiento y mis habilidades gracias a algunos proyectos personales o otras formaciones sobre diferentes lenguajes de programación.'
-  Iam: 'Estoy'
-  skills: 'Competencias'
-  beginner: 'principiante'
-  intermediate: 'intermedio'
-  advanced: 'avanzado'
-  projects: 'Mis proyectos'
-  contact: 'Contactos'
-  motivation: 'Motivado'
-  curious: 'Curioso'
-  fast-learner: 'Fast-learner'
-  challenges: 'Esperando nuevos desafíos'
-  game: 'Pero si llegó un poco por casualidad en este site, que mi perfil no le interesa especialmente pero tienes dos minutos, le propongo un juego codificado en Javascript entonces no dude'
+  dev: Desarollador web
+  about-me: Quién soy
+  description_first: Ingeniero mecánico desde 2017, cambié de carrera en 2020 para ser desarrollador web. Ya estaba muy interessado por ese campo, pues decidí seguir una formación propuesta por
+  description_second: entre Julio et Septiembre 2020. Desde entonces, estoy desarrollando mi entendimiento y mis habilidades gracias a algunos proyectos personales o otras formaciones sobre diferentes lenguajes de programación.
+  Iam: Estoy
+  skills: Competencias
+  beginner: principiante
+  intermediate: intermedio
+  advanced: avanzado
+  projects: Mis proyectos
+  contact: Contactos
+  motivation: Motivado
+  curious: Curioso
+  fast-learner: Fast-learner
+  challenges: Esperando nuevos desafíos
+  game: Pero si llegó un poco por casualidad en este site, que mi perfil no le interesa especialmente pero tienes dos minutos, le propongo un juego codificado en Javascript entonces no dude
+  projects_detail:
+    resonances:
+      skill_one: Sistema de notificación en vivo
+      skill_two: Interfaz de Administración - Active Admin
+      skill_three: Cálculo de puntos basado en acciones del usuario
+      description: Resonances ayudo compañías para ser ágil y resistentes. 
+    obras:
+      skill_one: Front React JS
+      skill_two: Wizard form (Multi step)
+      skill_three: Export PDF - gem Grover
+      description: Plateforma web que simplifica la creación de documentos de seguridad para empresas de construcción.
+    access_inn_pattaya:
+      skill_one: Reservacíon - Back end
+      skill_two: Background Job - tareas automatizadas (mails ...)
+      skill_three: Paypal pago
+      description: Sitio web para um complejo hotelero tailandés.
+    gratte_ton_chomage:
+      skill_one: calculo prestación desempleo - Back-end
+      skill_two: Exportación PDF - Gem wicked-pdf
+      skill_three: Formulario AJAX para manejar errores
+      description: Aplicación para facilitar accesso al derecho al desempleo despúes de una experiencia internacional.
+    homeboard:
+      skill_one: Chat en vivo - Action Cable
+      skill_two: notificaciones en tiempo real - Action Cable
+      skill_three: Authentification & Authorization
+      description: Aplicación para dueño de apartamento esperando oportunidades del vecindad.
+    airbnbike:
+      skill_one: Airbnb like - Market place
+      skill_two: Sistema de pago - Stripe
+      skill_three: Geomapping & Geolocalization - Mapbox
+      description: Market place para los aficionados de la bicicleta.

@@ -1,17 +1,48 @@
 fr:
-  dev: 'Developpeur web fullstack'
+  dev: Developpeur web fullstack'
   about-me: 'A propos de moi'
-  description_first: "Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le développement Web. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation proposée par"
-  description_second: "entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou d'autres formations sur divers langages de programmation."
-  Iam: 'Je suis'
-  skills: 'Compétences'
-  beginner: 'débutant'
-  intermediate: 'intermédiaire'
-  advanced: 'avancé'
-  projects: 'Mes Projets'
-  contact: 'Me contacter'
-  motivation: 'Motivé'
-  curious: 'Curieux'
-  fast-learner: 'Fast-learner'
-  challenges: 'En attente de nouveaux challenges'
-  game: "Mais si vous êtes tombé un peu par hasard sur cette page, que mon profil ne vous intéresse pas specialement mais que vous avez deux minutes à tuer, je vous propose un petit jeux codé en Javascript alors n'hésitez pas"
+  description_first: Ingénieur mécanique depuis 2017, j'ai décidé de me ré-orienter en 2020 dans le développement Web. Déjà très intéressé par le domaine de l'informatique, j'ai décidé de suivre une formation proposée par
+  description_second: entre Juillet et Septembre 2020. Depuis, je développe mes connaissances dans ce domaine que ce soit au travers de projets personnels ou d'autres formations sur divers langages de programmation.
+  Iam: Je suis
+  skills: Compétences
+  beginner: débutant
+  intermediate: intermédiaire
+  advanced: avancé
+  projects: Mes Projets
+  contact: Me contacter
+  motivation: Motivé
+  curious: Curieux
+  fast-learner: Fast-learner
+  challenges: En attente de nouveaux challenges
+  game: Mais si vous êtes tombé un peu par hasard sur cette page, que mon profil ne vous intéresse pas specialement mais que vous avez deux minutes à tuer, je vous propose un petit jeux codé en Javascript alors nhésitez pas
+  projects_detail:
+    resonances:
+      skill_one: Système de notification en temps réel
+      skill_two: Interface Admin - Active Admin
+      skill_three: Calcul de points basé sur les actions utilisateur
+      description: Resonances aide les entreprises à être agiles et résiliente.
+    obras:
+      skill_one: Front React JS,
+      skill_two: Wizard form (Multi step),
+      skill_three: Export PDF - Gem Grover,
+      description: Plateforme web qui simplifie la création de documents sécurité pour les entreprise de BTP (PPSPS)
+    access_inn_pattaya:
+      skill_one: Gestion back-end booking,
+      skill_two: Background Jobs - Tâches automatisées (Mails ...),
+      skill_three: Intégration système paiement PayPal,
+      description: Site à destination d'un complexe hotelier Thailandais
+    gratte_ton_chomage:
+      skill_one: Calcul allocation - Back-end,
+      skill_two: Export PDF - Gem wicked-pdf,
+      skill_three: Formulaire AJAX gestions erreurs,
+      description: Application qui permet de faciliter l'accès au chomage pour les personnes revenant de V.I.
+    homeboard:
+      skill_one: Chat live - Action Cable,
+      skill_two: Notifications en temps réel - Action Cable,
+      skill_three: Authentification & Authorization, 
+      description: Application qui permet de gérer sa vie de propriétaire et améliorer les relations de voisinages au travers de services.
+    airbnbike:
+      skill_one: Airbnb like - Market place,
+      skill_two: Système de paiement - Stripe,
+      skill_three: Géomapping & géolocalisation - Mapbox,
+      description: Market place permettant de mettre en relation des cyclistes occasionnels.
