@@ -1,7 +1,4 @@
-class Skill < ApplicationRecord
-  validates :name, presence: true
-  validates :level, presence: true
-
+class Skill
   SKILLS = [
     {
       name: "Ruby",
